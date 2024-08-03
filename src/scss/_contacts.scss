@@ -1,0 +1,25 @@
+.contact {
+  &__email {
+    position: relative;
+    display: block;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: $fontColorSecondary;
+    font-weight: 700;
+    font-size: 1.3rem;
+    @extend %hover;
+  }
+  &__socials {
+    display: flex;
+    gap: 1rem;
+  }
+  &__social-item {
+    position: relative;
+    font-size: 2rem;
+    @extend %hover;
+
+    & svg {
+      color: $fontColorSecondary;
+    }
+  }
+}

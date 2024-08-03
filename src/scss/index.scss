@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+@import './_vars.scss';
+@import './_extends.scss';
+@import './_navbar.scss';
+@import './_contacts.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+html,
+body,
+#root {
+  font-family: 'JetBrains Mono';
+  height: 100%;
+  color: $fontColorMain;
+  background-color: $backgroundColorMain;
+  font-size: 18px;
+  font-weight: 400;
+  @media screen and (max-width: 768px) {
+    font-size: 12px;
+  }
+  @media (max-width: 375px) {
+    font-size: 10px;
+  }
+}
+
+.container {
+  scroll-snap-type: mandatory;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: inherit;
+  &__child {
+    padding-block: 2rem;
+    scroll-snap-align: start;
+    height: inherit;
+  }
+}
+
+.wrapper {
+  margin-inline: auto;
+  width: min(100% - 3rem, 50rem);
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  line-height: 1.2;
+  font-weight: 300;
+  &--1 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 1px #0ffbf9, -3px 1px #ff3f4a;
+  }
+}
+
+.text {
+  text-align: justify;
+  font-size: 1.5rem;
+}

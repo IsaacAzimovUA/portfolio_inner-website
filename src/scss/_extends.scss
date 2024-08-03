@@ -1,0 +1,17 @@
+%hover {
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 0.1em;
+    background-color: $fontColorSecondary;
+    transition: width 0.2s ease-in;
+  }
+  &:hover {
+    &:before {
+      width: 100%;
+    }
+  }
+}
