@@ -6,11 +6,10 @@
     justify-content: end;
   }
   &__item {
-    &:nth-last-of-type(1) {
-      z-index: 2;
-    }
+    z-index: 1;
   }
   &__menu {
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -20,13 +19,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    transition: all 0.5s ease;
-    opacity: 0;
-    &--active {
-      opacity: 1;
-      position: absolute;
-    }
   }
 
   &__menu-wrapper {
@@ -39,7 +31,7 @@
   &__menu-item {
     position: relative;
     font-size: 4rem;
-    line-height: inherit;
+    font-weight: 700;
     @extend %hover;
   }
 

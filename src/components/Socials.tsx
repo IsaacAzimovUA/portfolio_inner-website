@@ -5,11 +5,12 @@ export const SOCIAL_ITEMS = [
   { id: 1, title: 'github', icon: faGithub, href: '#' },
   { id: 2, title: 'linkedin', icon: faLinkedin, href: '#' },
 ]
-export const Contacts = () => {
+export const Socials = () => {
   return (
     <>
       <div className="contact">
         <a
+          title="email"
           target="_blank"
           className="contact__email"
           href="mailto:dmytrohordus@gmail.com"

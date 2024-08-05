@@ -1,11 +1,12 @@
 import { Twirl as Hamburger } from 'hamburger-react'
 import { useState } from 'react'
-import { Contacts } from './Contacts'
+import { Socials } from './Socials'
+
 const MENU_ITEMS = [
   { id: 1, name: 'home', href: '#' },
-  { id: 2, name: 'projects', href: '#' },
-  { id: 3, name: 'about', href: '#' },
-  { id: 4, name: 'home', href: '#' },
+  { id: 2, name: 'about', href: '#about' },
+  { id: 3, name: 'skills', href: '#skills' },
+  { id: 4, name: 'contact', href: '#contacts' },
 ]
 
 export const Navbar = () => {
@@ -21,28 +22,29 @@ export const Navbar = () => {
           />
         </li>
       </ul>
-      <div
-        className={
-          isOpen ? 'navbar__menu navbar__menu--active' : 'navbar__menu'
-        }
-      >
-        {isOpen && (
+      {isOpen && (
+        <div className="navbar__menu">
           <div className="navbar__menu-wrapper">
             <ul>
               {MENU_ITEMS.map((item) => (
                 <li className="navbar__menu-item" key={item.id}>
-                  <a onClick={() => setOpen(!isOpen)} href={item.href}>
+                  <a
+                    onClick={() => {
+                      setOpen(!isOpen)
+                    }}
+                    href={item.href}
+                  >
                     {item.name.toUpperCase()}
                   </a>
                 </li>
               ))}
             </ul>
             <div className="navbar__menu-contact">
-              <Contacts />
+              <Socials />
             </div>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </nav>
   )
 }

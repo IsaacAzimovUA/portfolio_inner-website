@@ -2,7 +2,7 @@
 @import './_vars.scss';
 @import './_extends.scss';
 @import './_navbar.scss';
-@import './_contacts.scss';
+@import './_social.scss';
 
 * {
   box-sizing: border-box;
@@ -26,6 +26,7 @@ body,
   background-color: $backgroundColorMain;
   font-size: 18px;
   font-weight: 400;
+  scroll-behavior: smooth;
   @media screen and (max-width: 768px) {
     font-size: 12px;
   }
@@ -37,12 +38,20 @@ body,
 .container {
   scroll-snap-type: mandatory;
   scroll-snap-type: y mandatory;
-  overflow-y: scroll;
+  overflow-y: auto;
+
   height: inherit;
+  scroll-behavior: smooth;
   &__child {
     padding-block: 2rem;
     scroll-snap-align: start;
     height: inherit;
+
+    &:nth-of-type(2),
+    &:nth-of-type(3) {
+      color: $backgroundColorMain;
+      background-color: $fontColorMain;
+    }
   }
 }
 
@@ -53,15 +62,20 @@ body,
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 1rem;
 }
 
 .title {
   line-height: 1.2;
   font-weight: 300;
   &--1 {
+    font-size: 4rem;
     text-align: center;
-    font-size: 2rem;
     text-shadow: 3px 1px #0ffbf9, -3px 1px #ff3f4a;
+  }
+  &--2 {
+    text-align: center;
+    font-size: 4rem;
   }
 }
 
