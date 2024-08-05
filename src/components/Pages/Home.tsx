@@ -5,7 +5,7 @@ const Home = () => {
     <>
       <Navbar />
       <div className="wrapper">
-        <h1 className="title--1">Hey there! 👋</h1>
+        <h1 className="title title--1">Hey there! 👋</h1>
         {/* <TypeAnimation
             preRenderFirstString={true}
             wrapper="p"

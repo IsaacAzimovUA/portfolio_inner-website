@@ -23,8 +23,11 @@ export const Navbar = () => {
         </li>
       </ul>
       {isOpen && (
-        <div className="navbar__menu">
-          <div className="navbar__menu-wrapper">
+        <div onClick={() => setOpen(!isOpen)} className="navbar__menu">
+          <div
+            onClick={(e) => e.stopPropagation()}
+            className="navbar__menu-wrapper"
+          >
             <ul>
               {MENU_ITEMS.map((item) => (
                 <li className="navbar__menu-item" key={item.id}>
