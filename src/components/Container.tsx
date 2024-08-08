@@ -5,7 +5,13 @@ const Container = ({ children }: { children: ReactElement[] }) => {
     <div className="container">
       {children.map((child, index) => {
         return (
-          <div key={index} className="container__child">
+          <div
+            key={index}
+            className="container__child"
+            style={{
+              height: index === children.length - 1 ? 'fit-content' : 'inherit',
+            }}
+          >
             {child}
           </div>
         )

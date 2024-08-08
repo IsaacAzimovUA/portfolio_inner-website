@@ -4,8 +4,10 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <div className="wrapper">
-        <h1 className="title title--1">Hey there! 👋</h1>
+      <header className="wrapper">
+        <h1 className="title title--1">
+          Hey there! 👋<span className="blink">|</span>
+        </h1>
         {/* <TypeAnimation
             preRenderFirstString={true}
             wrapper="p"
@@ -31,7 +33,7 @@ const Home = () => {
             state management with React and Redux Toolkit ⚛️, I’m all about
             making the web engaging and fun.
           </p> */}
-      </div>
+      </header>
     </>
   )
 }
