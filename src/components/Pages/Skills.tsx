@@ -40,7 +40,7 @@ const SKILL_ITEMS = {
     { id: 5, name: 'mysql', icon: SiMysql },
     { id: 6, name: 'mongodb', icon: SiMongodb },
   ],
-  utilities: [
+  developmentTools: [
     { id: 1, name: 'vscode', icon: SiVisualstudiocode },
     { id: 2, name: 'git', icon: SiGit },
     { id: 3, name: 'github', icon: SiGithub },
@@ -57,15 +57,17 @@ export const Skills = () => {
     <div className="wrapper" id="skills">
       <h2 className="title title--2">My Skills</h2>
       <p className="text">
-        &gt; I have a diverse skill set that spans both front-end 🎨 and
-        back-end 🔧 development, allowing me to create full-stack web
-        applications from start to finish. Below is a list of the technologies
-        and tools 🛠️ I use to bring projects to life.
+        &gt; I have a diverse skill set that allows me to create full-stack web
+        applications from start to finish 🚀. Below is a list of the
+        technologies and tools 🔧 I use to bring projects to life ✨.
         <span className="blink">|</span>
       </p>
-      <SkillList skillList={SKILL_ITEMS.frontend} title={'frontend'} />
-      <SkillList skillList={SKILL_ITEMS.backend} title={'backend'} />
-      <SkillList skillList={SKILL_ITEMS.utilities} title={'utilities'} />
+      <SkillList skillList={SKILL_ITEMS.frontend} title={'frontend 🎨'} />
+      <SkillList skillList={SKILL_ITEMS.backend} title={'backend ⚙️'} />
+      <SkillList
+        skillList={SKILL_ITEMS.developmentTools}
+        title={'dev tools 🛠️'}
+      />
     </div>
   )
 }

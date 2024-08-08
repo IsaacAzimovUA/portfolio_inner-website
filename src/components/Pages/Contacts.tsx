@@ -2,7 +2,7 @@ import { Socials } from '../Socials'
 
 export const Contacts = () => {
   return (
-    <footer className="wrapper" id="contacts">
+    <footer className="wrapper--footer wrapper" id="contacts">
       <Socials />
     </footer>
   )

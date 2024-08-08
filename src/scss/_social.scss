@@ -15,6 +15,7 @@
   &__social-item {
     position: relative;
     font-size: 2rem;
+    @extend %hover--secondary;
 
     & svg {
       color: inherit;

@@ -1,5 +1,5 @@
 .navbar {
-  width: min(100% - 3rem, 56rem);
+  @extend %maxWidth;
   margin-inline: auto;
   &__wrapper {
     display: flex;

@@ -7,11 +7,21 @@
     width: 0%;
     height: 0.1em;
     background-color: $fontColorSecondary;
-    transition: width 0.2s ease-in;
+    transition: width 0.1s ease-in;
   }
   &:hover {
     &:before {
       width: 100%;
     }
   }
+
+  &--secondary {
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+%maxWidth {
+  width: min(100% - 3rem, 60rem);
 }

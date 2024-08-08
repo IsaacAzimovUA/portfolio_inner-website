@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <>
       <Navbar />
-      <header className="wrapper">
+      <div className="wrapper">
         <TypeAnimation
           preRenderFirstString={false}
           cursor={false}
@@ -13,11 +13,8 @@ const Home = () => {
           sequence={['>  Hey there! 👋']}
           speed={20}
           className="title title--1"
-          style={{
-            fontFamily: 'fonts/JetBrainsMono_Regular.ttf',
-          }}
         />
-      </header>
+      </div>
     </>
   )
 }

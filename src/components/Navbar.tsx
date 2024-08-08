@@ -16,6 +16,7 @@ export const Navbar = () => {
       <ul className="navbar__wrapper">
         <li className="navbar__item">
           <Hamburger
+            label="menu"
             toggled={isOpen}
             toggle={setOpen}
             color={isOpen ? '#000' : '#fff'}

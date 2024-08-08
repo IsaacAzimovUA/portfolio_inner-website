@@ -20,7 +20,7 @@ export const Socials = () => {
         <ul className="contact__socials">
           {SOCIAL_ITEMS.map(({ id, title, icon, href }) => (
             <li key={id} title={title} className="contact__social-item">
-              <a href={href} target="_blank">
+              <a href={href} target="_blank" aria-label={title}>
                 <FontAwesomeIcon className="icon" icon={icon} />
               </a>
             </li>
