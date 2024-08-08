@@ -57,10 +57,11 @@ export const Skills = () => {
     <div className="wrapper" id="skills">
       <h2 className="title title--2">My Skills</h2>
       <p className="text">
-        &gt; I also enjoy creating immersive 3D effects with Three.js, Fiber,
-        Spring, and Drei 🎮. When I’m not coding, you’ll find me strumming my
-        ukulele 🎶, exploring new tech 🔍, or diving into a good book 📚. Let’s
-        build something awesome together<span className="blink">|</span>
+        &gt; I have a diverse skill set that spans both front-end 🎨 and
+        back-end 🔧 development, allowing me to create full-stack web
+        applications from start to finish. Below is a list of the technologies
+        and tools 🛠️ I use to bring projects to life.
+        <span className="blink">|</span>
       </p>
       <SkillList skillList={SKILL_ITEMS.frontend} title={'frontend'} />
       <SkillList skillList={SKILL_ITEMS.backend} title={'backend'} />

@@ -3,7 +3,6 @@ import { Socials } from '../Socials'
 export const Contacts = () => {
   return (
     <footer className="wrapper" id="contacts">
-      <h2 className="title title--2">Contacts</h2>
       <Socials />
     </footer>
   )
