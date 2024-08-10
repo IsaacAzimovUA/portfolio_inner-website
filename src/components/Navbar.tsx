@@ -29,7 +29,7 @@ export const Navbar = () => {
             onClick={(e) => e.stopPropagation()}
             className="navbar__menu-wrapper"
           >
-            <ul>
+            <ul className="navbar__menu-item-set">
               {MENU_ITEMS.map((item) => (
                 <li
                   className="navbar__menu-item"

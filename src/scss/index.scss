@@ -20,6 +20,7 @@ li {
 }
 a {
   color: inherit;
+  cursor: pointer;
   text-decoration: none;
 }
 
@@ -73,6 +74,7 @@ body,
   align-items: center;
   gap: 1rem;
   &--footer {
+    margin-block: 3rem;
     @media (min-width: 425px) {
       align-items: start;
     }

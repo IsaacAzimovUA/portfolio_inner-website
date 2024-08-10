@@ -1,9 +1,16 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
+const { VITE_LINK_GITHUB, VITE_LINK_LINKEDIN } = import.meta.env
+const LINK_EMAIL = import.meta.env.VITE_LINK_EMAIL
 export const SOCIAL_ITEMS = [
-  { id: 1, title: 'github', icon: faGithub, href: '#' },
-  { id: 2, title: 'linkedin', icon: faLinkedin, href: '#' },
+  {
+    id: 1,
+    title: 'github',
+    icon: faGithub,
+    href: VITE_LINK_GITHUB,
+  },
+  { id: 2, title: 'linkedin', icon: faLinkedin, href: VITE_LINK_LINKEDIN },
 ]
 export const Socials = () => {
   return (
@@ -13,9 +20,9 @@ export const Socials = () => {
           title="email"
           target="_blank"
           className="contact__email"
-          href="mailto:dmytrohordus@gmail.com"
+          href={`mailto:${LINK_EMAIL}`}
         >
-          dmytrohordus@gmail.com
+          {LINK_EMAIL}
         </a>
         <ul className="contact__socials">
           {SOCIAL_ITEMS.map(({ id, title, icon, href }) => (

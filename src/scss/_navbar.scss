@@ -28,7 +28,12 @@
     flex-wrap: wrap;
   }
 
+  &__menu-item-set {
+    display: flex;
+    flex-direction: column;
+  }
   &__menu-item {
+    width: fit-content;
     position: relative;
     font-size: 4rem;
     font-weight: 700;
