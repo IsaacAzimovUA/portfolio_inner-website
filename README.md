@@ -1,30 +1,49 @@
-# React + TypeScript + Vite
+# My Portfolio Landing Page 🖥️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the landing page of my Portfolio 🌐! This is the simpler, yet essential, counterpart to my 3D portfolio experience. It's designed as a clean, responsive introduction to my work, seamlessly connected to the 3D portfolio via an iframe.
 
-Currently, two official plugins are available:
+## Check It Out 👀
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Take a look at the live demo [here](https://isaacazimovua.github.io/portfolio_inner-website/) 🌍.
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
 
-- Configure the top-level `parserOptions` property like this:
+   ```sh
+   git clone https://github.com/isaacazimovua/portfolio_inner-website.git
+   cd portfolio_inner-website
+   ```
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+2. Create a `.env` file in the root of the project and add the following:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+   ```env
+   VITE_LINK_EMAIL="EMAIL"
+   VITE_LINK_LINKEDIN="LINKEDIN"
+   VITE_LINK_GITHUB="GITHUB"
+   ```
+
+   Replace `"EMAIL"`, `"LINKEDIN"`, and `"GITHUB"` with your actual email, LinkedIn, and GitHub links.
+
+3. Install dependencies and run the development server:
+
+   ```sh
+   npm install
+   npm run dev
+   ```
+
+## Contributing 🤝
+
+Found a bug or have an idea? Feel free to open an issue or a pull request. Contributions are welcome!
+
+## License 📝
+
+This project is under the MIT License. Check the [LICENSE](LICENSE) file for more info.
+
+## Get in Touch 📧
+
+Questions or feedback? You can reach me at [dmytro.hordus@gmail.com].
+
+---
+
+## Explore the landing page, and don't forget to dive deeper into the 3D experience! 🌐 [Visit my Portfolio](https://isaacazimovua.github.io/portfolio_website/) 🚀
