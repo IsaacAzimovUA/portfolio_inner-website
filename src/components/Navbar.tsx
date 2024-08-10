@@ -3,10 +3,10 @@ import { useState } from 'react'
 import { Socials } from './Socials'
 
 const MENU_ITEMS = [
-  { id: 1, name: 'home', href: '#' },
-  { id: 2, name: 'about', href: '#about' },
-  { id: 3, name: 'skills', href: '#skills' },
-  { id: 4, name: 'contact', href: '#contacts' },
+  { id: 1, name: 'home', href: '' },
+  { id: 2, name: 'about', href: 'about' },
+  { id: 3, name: 'skills', href: 'skills' },
+  { id: 4, name: 'contact', href: 'contacts' },
 ]
 
 export const Navbar = () => {
@@ -31,12 +31,24 @@ export const Navbar = () => {
           >
             <ul>
               {MENU_ITEMS.map((item) => (
-                <li className="navbar__menu-item" key={item.id}>
+                <li
+                  className="navbar__menu-item"
+                  key={item.id}
+                  onClick={() => {
+                    setOpen(!isOpen)
+                  }}
+                >
                   <a
-                    onClick={() => {
-                      setOpen(!isOpen)
+                    onClick={(e) => {
+                      e.preventDefault()
+                      const container =
+                        document.getElementsByClassName('container')[0]
+                      const target = document.getElementById(item.href)!
+                      container.scrollTo({
+                        top: target.offsetTop,
+                        behavior: 'smooth',
+                      })
                     }}
-                    href={item.href}
                   >
                     {item.name.toUpperCase()}
                   </a>
