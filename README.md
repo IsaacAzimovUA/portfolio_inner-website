@@ -46,4 +46,4 @@ Questions or feedback? You can reach me at [dmytro.hordus@gmail.com].
 
 ---
 
-## Explore the landing page, and don't forget to dive deeper into the 3D experience! 🌐 [Visit my Portfolio](https://isaacazimovua.github.io/portfolio_website/) 🚀
+## Explore the landing page, and don't forget to dive deeper into the 3D experience! 🌐 [Visit my Portfolio](https://isaacua.github.io/portfolio_website/) 🚀
