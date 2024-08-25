@@ -4,7 +4,7 @@ Welcome to the landing page of my Portfolio 🌐! This is the simpler, yet essen
 
 ## Check It Out 👀
 
-Take a look at the live demo [here](https://isaacazimovua.github.io/portfolio_inner-website/) 🌍.
+Take a look at the live demo [here](https://isaacua.github.io/portfolio_inner-website/) 🌍.
 
 ## Getting Started
 
